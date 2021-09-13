@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>Weblab 5</title>
+    
+    <link rel="shortcut icon" href="./favicon.ico">
+    
+    <style>  
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        
+		body {
+			font-size: 30px;
+            padding: 0 20%;
+            max-width: 1920px;
+            margin: auto;
+		}
+        
+        .content {
+            box-sizing: border-box;
+            display: block;
+            position: fixed;
+            float: left;
+            top: 30px;
+            left: 0;
+            background: white;
+            width: 20%;
+            padding: 0;
+            padding-left: 20px;
+        }
+        
+        .content ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: gray;
+        }
+        
+        .content a {
+            display: inline-block;
+            width: 100%;
+            font-style: italic;
+            color: inherit;
+/*            padding-left: 0.5em;*/
+        }
+        
+        .content a:hover {
+            color: black;
+        }
+        
+        .org {
+            text-align: center;
+            font-size: 0.6em;
+        }
+        
+        .name {
+            margin-top: 5em;
+            text-align: center;
+        }
+        
+        .sign {
+            margin-top: 5em;
+            text-align: end;
+        }
+        
+        .sign>div {
+            display: block;
+            text-align: center;
+            margin-bottom: -1em;
+        }
+        
+        .moscow {
+            margin-top: 5em;
+            margin-bottom: 5em;
+            text-align: center;
+        }
+		
+        h1 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        
+		h1, h2, h3 {
+			text-align: center;
+		}
+		
+		table {
+			width: fit-content;
+			margin: auto;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		
+		table, td, th {
+			border: 1px solid black;
+			padding: 10px;
+		}
+        
+        pre {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            font-size: 0.8em;
+            background: black;
+            color: white;
+            height: 2em;
+            padding: 0.5em;
+            white-space: pre-wrap;
+            height: fit-content;
+        }
+        
+        pre>* {
+            display: block;
+            margin: 0;
+        }
+		
+	</style>
+    
+</head>
+
+<body>
+    <div class="content">
+        <ul><b>Содержание:</b>
+            <li><a href="#title">Титульный лист</a></li>
+            <li><a href="#runet">10 сайтов Рунета</a></li>
+            <li><a href="#site">Сайт М.Видео</a></li>
+            <li><a href="#list">Изучение вёрстки</a></li>
+        </ul>
+    </div>
+    <div class="title" id="title">
+        <div class="org">
+            Министерство науки и высшего образования Российской Федерации
+            <br>Федеральное государственное бюджетное образовательное учреждение высшего образования
+            <br>«Московский политехнический университет»
+            <br>Кафедра «Инфокогнитивные технологии»
+            <br>Образовательная программа «Веб-технологии»
+        </div>
+        <div class="name">
+            ЛАБОРАТОРНАЯ РАБОТА №5
+            <br>по дисциплине «Веб-технологии»
+            <h1>Тема: «АНАЛИЗ СОВРЕМЕННЫХ САЙТОВ»</h1>
+        </div>
+        <div class="sign">
+            Выполнил:
+            <br>Студент группы 201-321
+            <div>_________________</div>
+            Бухарцев М.А.
+            <div>подпись, дата</div>
+        </div>
+        <div class="sign">
+            Принял:
+            <br>Старший преподаватель
+            <div>_________________</div>
+            Даньшина М.В.
+            <div>подпись, дата</div>
+        </div>
+        <div class="moscow">Москва 2020</div>
+	</div>
+    <h2 id="runet">Отчёт по 10 сайтам Рунета (css)</h2>
+    <ol>
+        <li>Пятёрочка <i>(will-change)</i></li>
+        <li>Эльдорадо <i>(order)</i></li>
+        <li>Комсомольская Правда <i>(font-feature-settings)</i></li>
+        <li>ITECH <i>(pointer-event)</i></li>
+        <li>МегафонТВ <i>(text-overflow)</i></li>
+        <li>Большой театр <i>(outline)</i></li>
+        <li>Auchan Retail <i>(object-fit)</i></li>
+        <li>Очкарик <i>(-webkit-tap-highlight-color)</i></li>
+        <li>Сибирская коллекция <i>(appearance)</i></li>
+        <li>Gloria Jeans <i>(fill)</i></li>
+    </ol>
+	<table>
+        <tr>
+            <th>№</th>
+            <th>Название свойства</th>
+            <th>Синтаксис</th>
+            <th>Пример</th>
+            <th>Сайт</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>will-change</td><!--Свойство-->
+            <td>&lt;custom-ident&gt;</td><!--Синтаксис-->
+            <td>will-change: stroke;<br><b>Сообщает браузеру, что свойство "stroke" будет изменяться</b></td><!--Пример-->
+            <td><a href="https://5ka.ru/">Пятёрочка</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>order</td><!--Свойство-->
+            <td>&lt;integer&gt;</td><!--Синтаксис-->
+            <td>order: 0;<br><b>Ставит объект на первую позицию при flex-позиционировании</b></td><!--Пример-->
+            <td><a href="https://www.eldorado.ru/">Эльдорадо</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>font-feature-settings</td><!--Свойство-->
+            <td>&lt;feature-tag-value&gt;</td><!--Синтаксис-->
+            <td>font-feature-settings: "tnum", "lnum";<br><b>Активирует отображение табличных цифр и цифр подкладки (tabular and lining numerals)</b></td><!--Пример-->
+            <td><a href="https://www.kp.ru/">kp.ru</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>pointer-event</td><!--Свойство-->
+            <td>auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | inherit</td><!--Синтаксис-->
+            <td>pointer-events: all;<br><b>Обрабатывает события мышь над любой областью</b></td><!--Пример-->
+            <td><a href="https://itech-group.ru/">ITECH</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>text-overflow</td><!--Свойство-->
+            <td>clip | ellipsis | &lt;string&gt;</td><!--Синтаксис-->
+            <td>text-overflow: ellipsis;<br><b>Заменяет непоместившийся текст на "..."</b></td><!--Пример-->
+            <td><a href="https://megafon.tv/">МегафонТВ</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>outline</td><!--Свойство-->
+            <td>&lt;outline-color&gt; &lt;outline-style&gt; &lt;outline-width&gt;</td><!--Синтаксис-->
+            <td>outline: none;<br><b>Граница не отображается</b></td><!--Пример-->
+            <td><a href="https://ochkarik.ru/">Очкарик</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>object-fit</td><!--Свойство-->
+            <td>fill | contain | cover | none | scale-down</td><!--Синтаксис-->
+            <td>object-fit: contain;<br><b>Пропорционально вмещается в родительский элемент</b></td><!--Пример-->
+            <td><a href="https://shop.bolshoi.ru/">Большой</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>-webkit-tap-highlight-color</td><!--Свойство-->
+            <td>&lt;color&gt;</td><!--Синтаксис-->
+            <td>-webkit-tap-highlight-color: transparent;<br><b>Убирает подсветку при нажатии</b></td><!--Пример-->
+            <td><a href="https://auchan-supply.ru/">Auchan Retail</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>appearance</td><!--Свойство-->
+            <td>&lt;appearance&gt;</td><!--Синтаксис-->
+            <td>appearance: button;<br><b>Используются стандартные стили и тема целевой платформы</b></td><!--Пример-->
+            <td><a href="https://sibircollection.ru/">Сибирская коллекция</a></td><!--Сайт-->
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>fill</td><!--Свойство-->
+            <td>&lt;color&gt;</td><!--Синтаксис-->
+            <td>fill: none;<br><b>Очищает заливку SVG-фигуры</b></td><!--Пример-->
+            <td><a href="https://www.gloria-jeans.ru/">Gloria Jeans</a></td><!--Сайт-->
+        </tr>
+    </table>
+    <h2 id="site">Отчёт по сайту <a href="https://www.mvideo.ru/">М.Видео</a></h2>
+    <h3>Структура сайта</h3>
+    <ol>
+        <p>Основной контент сайта (если не учитывать модальные окна, скрипты, таблицы стилей и т.п.) содержится в теге <em>wrapper</em>.</p>
+        <li>header
+           <ul>
+              <li>header-fixed
+                  <ul>
+                      <li>header-top-line</li>
+                      <li>header-main</li>
+                  </ul>
+              </li> 
+              <li>header-top-categories (множество ссылок в контейнере flex)</li>
+              <li>header-catalog</li>
+           </ul>
+           <img src="img/header.png" alt="header">
+        </li>
+        <li>main
+            <br><i>Однотипные блоки со слайдерами</i>
+            <br><img src="img/slider.png" alt="slider">
+            <br><i>Предложение подписаться</i>
+            <br><img src="img/subscribe.png" alt="subscribe">
+        </li>
+        <li>footer (деление на столбцы - flex, внутри - список ul>li)
+            <br><img src="img/footer.png" alt="footer" width="80%">
+        </li>
+    </ol>
+    <h3>Реализация блока "brands-section"</h3>
+    <ol>
+        <li>Создаём блок <pre><p>&lt;div class=&quot;brands-section&quot;&gt;...&lt;/div&gt;</p></pre></li>
+        <li>В этот блок вставляем заголовок <pre>&lt;div class=&quot;section brands-section__header&quot;&gt;Популярные бренды&lt;/div&gt;</pre></li>
+        <li>Добавляем контейнер для содержимого<pre>&lt;div class=&quot;fl-popular-brands&quot;&gt; ... &lt;/div&gt;</pre></li>
+        <li>Внутри - тег маркированного списка<pre>&lt;ul class=&quot;fl-popular-brands__content&quot; style=&quot;position: relative; left: 0px;&quot;&gt; ... &lt;/ul&gt;</pre></li>
+        <li>Добавляем элемент маркированного списка <pre>&lt;li class=&quot;brand-item&quot;&gt; ... &lt;/li&gt;</pre></li>
+        <li>Вставляем ссылку, чтобы изображение внутри было кликабельно (активно для нажатия)<pre>&lt;a href=&quot;/apple?from=homepage&quot; class=&quot;brand-item__link&quot;&gt; ... &lt;/a&gt;</pre></li>
+        <li>Добавляем контейнер для изображения<pre>&lt;div class=&quot;lazy-load-image-holder lazy-loaded&quot;&gt; ... &lt;/div&gt;</pre></li>
+        <li>Вставляем изображение с логотипом бренда<pre>&lt;img alt=&quot;Apple&quot; class=&quot;lazy&quot; src=&quot;//static.mvideo.ru/media/Promotions/Promo_Page/2020/September/brands/1/Apple.png&quot;&gt;</pre></li>
+        <li>Для правильного позиционирования картинок используем "flex" для "ul" (класс "fl-popular-brands__content")<pre>display: flex;</pre></li>
+        <li>Скрываем вертикальное вымещение <pre>overflow-y: hidden;</pre></li>
+        <li>Добавляем перенос дочерних элементов<pre>flex-wrap: wrap;</pre></li>
+        <li>Добавляем максимальную высоту<pre>max-height: calc(8.4rem * 2 + 2rem);</pre></li>
+        <li>Убираем маркировку у списка<pre>list-style: none;</pre></li>
+        <li>Добавляем размеры и "margin" для "li"<pre>width: 10.7rem;<br>height: 5.2rem;<br>margin-right: 1.2rem;<br>margin-bottom: 1.2rem;<br>position: relative;</pre></li>
+        <li>Добавляем "padding" для контейнера изображения<pre>padding: .8rem;</pre></li>
+        <li>Тегу "li" присваиваем высоту<pre>line-height: 17px;</pre></li>
+        <li>Тегу "a" добавляем фоновый цвет (серый)<pre>background: #f5f5f6;</pre></li>
+        Результат:
+        <img src="img/section.png" alt="brends">
+    </ol>
+    <h2 id="list">Список ресурсов для изучения верстки</h2>
+    <ol>
+        <li><a href="https://www.youtube.com/c/BouhartsevStudio" target="_blank">Bouharstev Studio</a><p>Влог "Заметки программиста" пока не содержит видео на эту тему. Но планируется сезон про веб-разработку. Лично для меня это дополнительный стимул к изучению и практике.</p></li>
+        <li><a href="https://www.youtube.com/c/BrainsCloud" target="_blank">BrainsCloud</a><p>YouTube-канал с обучающими видео о вебе. Интересно и практикоориентрованно.</p></li>
+        <li><a href="https://www.youtube.com/c/FreelancerLifeStyle" target="_blank">Фрилансер по жизни</a><p>Отличный канал о веб-разработке и удалённой работе. Изучил создание многих элементов и приёмов.</p></li>
+        <li><a href="https://www.youtube.com/user/loftblog" target="_blank">loftblog</a><p>Подписался после рекомендации преподавателей. Пока не успел достаточно изучить.</p></li>
+        <li><a href="https://www.youtube.com/c/WebDevSimplified" target="_blank">Web Dev Simplified</a><p>Подписался по рекомендации однокурсников. Вроде, неплохой.</p></li>
+        <li><a href="https://developer.mozilla.org/ru/" target="_blank">MDN</a><p>Содержит хороший и полный справочник по css и html</p></li>
+        <li><a href="http://htmlbook.ru/" target="_blank">htmlbook.ru</a><p>Грамотно работает SEO, долгое время выпадал первым в поисковых запросах. Хорош в качестве вспомогательного инструмента, но дизайн не очень.</p></li>
+        <li><a href="https://html5book.ru/" target="_blank">html5book</a><p>Достаточно неплохие обучающие статьи по веб-разработке. Полезен для пошагового обучения.</p></li>
+        <li><a href="https://webref.ru/" target="_blank">WebReference</a><p>Подробно расписаны стили и тэги, есть примеры и даже местами песочница.</p></li>
+        <li><a href="https://developers.google.com/search/docs/" target="_blank">Центр Google Поиска</a><p>Обучение SEO. О том, как индексирует Google.</p></li>    
+        <li><a href="https://yandex.ru/support/webmaster/" target="_blank">Вебмастер.Справка</a><p>Аналогично - от Яндекса.</p></li>   
+        <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a><p>Много статей, гайдов и туториалов по CSS. Очень хороший сайт для продвинутого изучения.</p></li>
+        <li><a href="https://codepen.io/" target="_blank">CodePen</a><p>Много отличных примеров разных работ. Можно не только искать решать проблемы, но и вдохновляться приёмами и идеями.</p></li>
+    </ol>
+</body>
+</html>
